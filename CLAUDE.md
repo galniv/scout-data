@@ -16,6 +16,14 @@ CLAUDE.md."*
 Determine which fruit is **actually available to pick right now** at each farm,
 then write `picking.json` and push to `main`.
 
+**Every run is a fresh check.** Do not reuse or lightly edit the existing
+`picking.json` — rebuild it from what you read today, and set `generatedAt` to
+the current time. Visit **all three** farms, and for each, read its **full**
+"what's picking" list and capture **every** fruit on it — in season a farm often
+has 3–6 fruits at once (e.g. Ward's can have strawberries, blueberries,
+**gooseberries**, currants, and more the same week). Don't stop after the first
+one or two; list them all.
+
 Farms (all pick-your-own, within range):
 - **Tougas Family Farm**, Northborough MA
   - Current status page (**start here — clean and reliable**):
