@@ -61,5 +61,14 @@ Farms:
 
 ## Finish
 
-`git add picking.json && git commit -m "Update picking feed" && git push`. Keep the
-run short and cheap — a few fetches and a file write, no extensive exploration.
+Publish **directly to `main`** — the dashboard reads `main`, so do **not** open a
+PR or leave the change on a working branch:
+
+```
+git add picking.json
+git commit -m "Update picking feed"
+git push origin HEAD:main
+```
+
+Keep the run short and cheap — a few fetches and a file write, no extensive
+exploration.
