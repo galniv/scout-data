@@ -1,4 +1,17 @@
 {
-  "generatedAt": "2026-07-03T07:00:00-04:00",
-  "crops": []
+  "generatedAt": "2026-07-03T07:15:00-04:00",
+  "crops": [
+    {
+      "crop": "strawberries",
+      "orchard": "Ward's Berry Farm",
+      "status": "now picking",
+      "url": "https://www.wardsberryfarm.com/pick-your-own"
+    },
+    {
+      "crop": "summer flowers",
+      "orchard": "Ward's Berry Farm",
+      "status": "now picking",
+      "url": "https://www.wardsberryfarm.com/pick-your-own"
+    }
+  ]
 }
