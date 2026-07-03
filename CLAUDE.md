@@ -28,11 +28,14 @@ Farms (all pick-your-own, within range):
 
 ## Rules
 
-1. **Report ANY fruit currently open for PYO** at these farms — you are not
-   limited to a preset list. Whatever the farm actually lists as picking now
-   counts (strawberries, blueberries, cherries, raspberries, blackberries,
-   currants, gooseberries, peaches, nectarines, plums, pears, apples, and even
-   pick-your-own flowers like sunflowers if the farm features them).
+1. **Report every FRUIT currently open for PYO** at each farm — list them all,
+   not just one, and you are not limited to a preset list. Whatever fruit the
+   farm actually lists as picking now counts (strawberries, blueberries,
+   cherries, raspberries, blackberries, currants, **gooseberries**, elderberries,
+   peaches, nectarines, plums, apricots, pears, apples, grapes, melons, etc.) —
+   including fruit types not named here.
+   **Fruit only.** Do NOT include flowers (sunflowers, tulips, "summer flowers"),
+   vegetables, herbs, or non-fruit items — we only care about fruit picking.
 2. **Read current status, don't assume.** Check each farm's dedicated "what's
    picking" / pick-your-own page first (these farms publish current status), plus
    a recent (~last 10 days) Facebook/Instagram post or an available U-pick product
@@ -49,22 +52,23 @@ Farms (all pick-your-own, within range):
 
 ## Output format (`picking.json`, repo root, exactly this shape)
 
+One object **per fruit per farm** — so a farm with several fruits gets several
+entries (the dashboard groups them by farm and lists all of them).
+
 ```json
 {
   "generatedAt": "2026-07-15T07:03:00-04:00",
   "crops": [
-    {
-      "crop": "blueberries",
-      "orchard": "Ward's Berry Farm",
-      "status": "now picking",
-      "url": "https://www.wardsberryfarm.com/pick-your-own"
-    }
+    { "crop": "strawberries", "orchard": "Ward's Berry Farm", "status": "now picking", "url": "https://www.wardsberryfarm.com/pick-your-own" },
+    { "crop": "gooseberries", "orchard": "Ward's Berry Farm", "status": "now picking", "url": "https://www.wardsberryfarm.com/pick-your-own" },
+    { "crop": "blueberries", "orchard": "Tougas Family Farm", "status": "now picking", "url": "https://www.tougasfamilyfarm.com/whats-picking" },
+    { "crop": "cherries", "orchard": "Tougas Family Farm", "status": "now picking", "url": "https://www.tougasfamilyfarm.com/whats-picking" }
   ]
 }
 ```
 
 - `generatedAt`: ISO 8601 with timezone offset (America/New_York).
-- `crop`: lowercase, plural — whatever is actually picking (e.g. `strawberries`, `blueberries`, `cherries`, `raspberries`, `currants`, `peaches`, `apples`, `sunflowers`). Not restricted to a preset list.
+- `crop`: lowercase, plural — whatever **fruit** is actually picking. Not restricted to a preset list; **no flowers/veg**.
 - `orchard`: the farm's name, shown verbatim on the dashboard — `Tougas Family Farm`, `Ward's Berry Farm`, or `Lookout Farm`.
 - `status`: a short human phrase you actually read — e.g. `now picking`, `just opened`, `peak`, `ending soon`.
 - `url`: the page you confirmed it from.
