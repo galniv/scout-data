@@ -17,9 +17,10 @@ Determine which fruit is **actually available to pick right now** at each farm,
 then write `picking.json` and push to `main`.
 
 Farms (all pick-your-own, within range):
-- **Tougas Family Farm**, Northborough MA — https://www.tougasfamilyfarm.com/
-  - Has a **"What's Picking Today?"** page and posts daily updates — usually the
-    most reliable current source. Start here.
+- **Tougas Family Farm**, Northborough MA
+  - Current status page (**start here — clean and reliable**):
+    https://www.tougasfamilyfarm.com/whats-picking — lists exactly what's picking
+    today. Homepage: https://www.tougasfamilyfarm.com/
 - **Ward's Berry Farm**, Sharon MA — https://www.wardsberryfarm.com/ ·
   https://www.wardsberryfarm.com/pick-your-own · their Facebook
 - **Lookout Farm** (Belkin Family Lookout Farm), South Natick MA —
