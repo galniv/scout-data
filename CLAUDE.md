@@ -34,6 +34,14 @@ Farms (all pick-your-own, within range):
 - **Lookout Farm** (Belkin Family Lookout Farm), South Natick MA —
   https://www.lookoutfarm.com/ · U-pick store https://www.lookoutfarmorchard.com/ · FB https://www.facebook.com/lookoutfarm/
 
+## Tooling note (do this first)
+
+Before using `WebFetch` or `WebSearch`, **load their schemas** — in this
+environment they're deferred tools. Run `ToolSearch` with
+`select:WebFetch,WebSearch` (or search `web fetch search`) once at the start,
+then call them normally. If you skip this, the call fails with
+`WebFetch failed … required parameter 'prompt' is missing`.
+
 ## Rules
 
 1. **Report every FRUIT currently open for PYO** at each farm — list them all,
