@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03T07:15:00-04:00",
+  "generatedAt": "2026-07-03T07:30:00-04:00",
   "crops": [
     {
       "crop": "strawberries",
@@ -8,10 +8,22 @@
       "url": "https://www.wardsberryfarm.com/pick-your-own"
     },
     {
-      "crop": "summer flowers",
+      "crop": "blueberries",
       "orchard": "Ward's Berry Farm",
       "status": "now picking",
       "url": "https://www.wardsberryfarm.com/pick-your-own"
+    },
+    {
+      "crop": "blueberries",
+      "orchard": "Tougas Family Farm",
+      "status": "now picking",
+      "url": "https://www.tougasfamilyfarm.com/whats-picking"
+    },
+    {
+      "crop": "cherries",
+      "orchard": "Tougas Family Farm",
+      "status": "ending soon",
+      "url": "https://www.tougasfamilyfarm.com/whats-picking"
     }
   ]
 }
