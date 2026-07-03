@@ -52,11 +52,15 @@ then call them normally. If you skip this, the call fails with
    including fruit types not named here.
    **Fruit only.** Do NOT include flowers (sunflowers, tulips, "summer flowers"),
    vegetables, herbs, or non-fruit items — we only care about fruit picking.
-2. **Read current status, don't assume.** Check each farm's dedicated "what's
-   picking" / pick-your-own page first (these farms publish current status), plus
-   a recent (~last 10 days) Facebook/Instagram post or an available U-pick product
-   in their online store. Use both WebFetch and WebSearch; if one page is thin or
-   JS-heavy, search for "<farm name> what's picking <current month>".
+2. **Lead with WebSearch, not WebFetch.** The farm sites frequently **block
+   direct `WebFetch` with HTTP 403** (bot protection), so don't rely on it — if a
+   `WebFetch` returns 403, do not retry it. Instead use **`WebSearch`** with
+   targeted queries and read the result snippets (they usually name the current
+   fruit), e.g. `Tougas Family Farm what's picking <month year>`, `Ward's Berry
+   Farm pick your own open now`, `Belkin Lookout Farm u-pick <month year>`. Also
+   search their recent (~last 10 days) Facebook/Instagram posts. `WebFetch` is a
+   nice-to-have when it works (e.g. Tougas's whats-picking page); never let a 403
+   stop the run.
 3. **Never guess from typical seasons.** Include a crop **only** when there's real
    current evidence it's open for PYO today. If a farm's season hasn't started, is
    between crops, or you truly can't confirm anything, include **nothing** for it
