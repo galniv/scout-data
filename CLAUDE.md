@@ -70,16 +70,25 @@ Farms (all pick-your-own, within range):
 - `url`: the page you confirmed it from.
 - If nothing is confirmed at either farm: `{"generatedAt":"<now>","crops":[]}`.
 
-## Finish
+## Finish — publish to `main` via the GitHub API (important)
 
-Publish **directly to `main`** — the dashboard reads `main`, so do **not** open a
-PR or leave the change on a working branch:
+The dashboard reads `picking.json` on `main`. In this cloud environment a plain
+`git push` does **not** leave the sandbox (it stays on an ephemeral branch), so
+you MUST commit to `main` through the GitHub API using the authenticated `gh`
+CLI. Do exactly this:
 
+```bash
+SHA=$(gh api repos/galniv/scout-data/contents/picking.json --jq .sha 2>/dev/null)
+B64=$(base64 < picking.json | tr -d '\n')
+gh api -X PUT repos/galniv/scout-data/contents/picking.json \
+  -f message="Update picking feed" \
+  -f content="$B64" \
+  ${SHA:+-f sha="$SHA"} \
+  -f branch=main
 ```
-git add picking.json
-git commit -m "Update picking feed"
-git push origin HEAD:main
-```
 
-Keep the run short and cheap — a few fetches and a file write, no extensive
+Confirm the API response contains a new `commit`. Only if `gh` is unavailable or
+returns 403, fall back to `git commit` + `git push origin HEAD:main`.
+
+Keep the run short and cheap — a few fetches and this write, no extensive
 exploration.
