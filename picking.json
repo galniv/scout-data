@@ -1,23 +1,12 @@
 {
-  "generatedAt": "2026-07-03T08:15:00-04:00",
+  "generatedAt": "2026-07-04T11:19:56-04:00",
   "crops": [
-    {
-      "crop": "strawberries",
-      "orchard": "Ward's Berry Farm",
-      "status": "now picking",
-      "url": "https://www.wardsberryfarm.com/pick-your-own"
-    },
-    {
-      "crop": "blueberries",
-      "orchard": "Ward's Berry Farm",
-      "status": "now picking",
-      "url": "https://www.wardsberryfarm.com/pick-your-own"
-    },
-    {
-      "crop": "blueberries",
-      "orchard": "Tougas Family Farm",
-      "status": "now picking",
-      "url": "https://www.tougasfamilyfarm.com/whats-picking"
-    }
+    { "crop": "blueberries", "orchard": "Tougas Family Farm", "status": "now picking", "url": "https://www.tougasfamilyfarm.com/whats-picking" },
+    { "crop": "cherries", "orchard": "Tougas Family Farm", "status": "now picking", "url": "https://www.tougasfamilyfarm.com/whats-picking" },
+    { "crop": "blueberries", "orchard": "Ward's Berry Farm", "status": "good", "url": "https://www.wardsberryfarm.com/pick-your-own" },
+    { "crop": "currants", "orchard": "Ward's Berry Farm", "status": "excellent", "url": "https://www.wardsberryfarm.com/pick-your-own" },
+    { "crop": "gooseberries", "orchard": "Ward's Berry Farm", "status": "good", "url": "https://www.wardsberryfarm.com/pick-your-own" },
+    { "crop": "raspberries", "orchard": "Ward's Berry Farm", "status": "excellent", "url": "https://www.wardsberryfarm.com/pick-your-own" },
+    { "crop": "strawberries", "orchard": "Ward's Berry Farm", "status": "fair", "url": "https://www.wardsberryfarm.com/pick-your-own" }
   ]
 }
