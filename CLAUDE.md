@@ -24,22 +24,30 @@ Farms + their current-status pages:
 ## How to fetch — use the Jina reader, NOT WebFetch
 
 The farm sites **block direct fetches** from this environment (they return HTTP
-403 — datacenter-IP / bot protection), and some are JS/image-heavy. So do **not**
-use `WebFetch` on the farm URLs. Instead fetch each page through the **Jina reader
-proxy**, which loads the page server-side (rendering JS/images) and returns clean
-markdown. Use `curl` in Bash, prefixing the farm URL with `https://r.jina.ai/`:
+403 — datacenter-IP / bot protection), and some are JS/image-heavy. **Never fetch
+a farm URL directly** — always go through the **Jina reader proxy**, which loads
+the page from its own servers (bypassing the 403) and renders JS/images to clean
+markdown. Prefix the farm URL with `https://r.jina.ai/`. So the three targets are:
 
-```bash
-curl -s --max-time 90 "https://r.jina.ai/https://www.tougasfamilyfarm.com/whats-picking"
-curl -s --max-time 90 "https://r.jina.ai/https://www.wardsberryfarm.com/pick-your-own"
-curl -s --max-time 90 "https://r.jina.ai/https://www.lookoutfarm.com/"
-```
+- `https://r.jina.ai/https://www.tougasfamilyfarm.com/whats-picking`
+- `https://r.jina.ai/https://www.wardsberryfarm.com/pick-your-own`
+- `https://r.jina.ai/https://www.lookoutfarm.com/`
 
-This returns the readable page text (e.g. Ward's "Today's Conditions" with each
-fruit + condition, Tougas's picking list). Read it and extract the fruit. If a
-reader call fails or comes back empty, retry it once; you may also try a
-`WebSearch` for "<farm> what's picking <month year>" as a supplement, but the
-reader output is the primary source.
+Fetch each of those **reader** URLs. Two ways — use whichever works in this
+environment:
+
+1. **`curl` in Bash** (preferred — returns the full raw text):
+   `curl -s --max-time 90 "https://r.jina.ai/https://www.tougasfamilyfarm.com/whats-picking"`
+2. **If Bash has no network / curl fails**, use **`WebFetch` on the same reader
+   URL** (first load it: run `ToolSearch` with `select:WebFetch`, then call
+   `WebFetch(url="https://r.jina.ai/https://www.wardsberryfarm.com/pick-your-own", prompt="List every fruit currently available for pick-your-own and its condition/status.")`).
+   `WebFetch` reaches the network even when Bash can't; pointing it at the reader
+   URL (not the farm) avoids the 403.
+
+Either way you get the readable page text (e.g. Ward's "Today's Conditions" with
+each fruit + condition, Tougas's picking list). Read it and extract the fruit. If
+one reader call fails or is empty, retry it once. Report clearly (print the URL +
+what happened) if a fetch fails, so failures are diagnosable.
 
 ## What to record
 
