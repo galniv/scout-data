@@ -1,10 +1,11 @@
 # scout-data — Family Scout picking feed
 
 This repo publishes one file, `picking.json`: the **current** pick-your-own (PYO)
-fruit status for our farms, read by the home dashboard
-([galniv/ha-dashboard](https://github.com/galniv/ha-dashboard), `src/scout/picking.ts`).
-It's public on purpose (non-sensitive — just what fruit is ripe) so the dashboard
-can fetch it without auth at
+fruit status for our regular farms **plus a few nearby farms that have fruit
+picking right now**. It's read by the home dashboard
+([galniv/ha-dashboard](https://github.com/galniv/ha-dashboard), `src/scout/picking.ts`),
+public on purpose (non-sensitive — just what fruit is ripe) so the dashboard can
+fetch it without auth at
 `https://raw.githubusercontent.com/galniv/scout-data/main/picking.json`.
 
 A scheduled Claude routine updates it. **This file is the routine's instructions**
@@ -12,81 +13,118 @@ A scheduled Claude routine updates it. **This file is the routine's instructions
 
 ## Each run
 
-Read the **current** pick-your-own status of three MA farms and write
-`picking.json`, then commit it to `main`. Do a **fresh** read every run (don't
-reuse the old file), and set `generatedAt` to the current time.
+Do a **fresh** read (don't reuse the old file), set `generatedAt` to now, then
+write `picking.json` (farm-centric, see Output) and commit to `main`. Two parts:
 
-Farms + their current-status pages:
-- **Tougas Family Farm** (Northborough) — https://www.tougasfamilyfarm.com/whats-picking (a daily "what's picking today" page)
-- **Ward's Berry Farm** (Sharon) — https://www.wardsberryfarm.com/pick-your-own (has a "Today's Conditions" list: each fruit with a rating like Good/Excellent + price)
+1. **Home farms** — read our three regular farms' current status (always included).
+2. **Discovery** — find a few nearby farms that have fruit picking **right now**.
+
+## 1. Home farms (always include)
+
+Always in the feed, even if farther than the discovery radius. Fetch each via the
+Jina reader (see "How to fetch"):
+
+- **Tougas Family Farm** (Northborough) — https://www.tougasfamilyfarm.com/whats-picking (daily "what's picking today" page)
+- **Ward's Berry Farm** (Sharon) — https://www.wardsberryfarm.com/pick-your-own ("Today's Conditions" list: each fruit + a rating like Good/Excellent)
 - **Lookout Farm** / Belkin Family Lookout Farm (South Natick) — https://www.lookoutfarm.com/
+
+Mark these `"home": true`.
+
+## 2. Discover nearby farms — fruit available NOW (read carefully)
+
+Home base is **Needham, MA**. Find a few *additional* PYO farms within about a
+**25-minute drive** of Needham that are **open and picking right now**.
+
+Method, and this part matters:
+
+1. From the home farms you just read, note which fruits are **currently being
+   picked** (in early/mid summer that's often strawberries, blueberries,
+   raspberries, cherries, currants, gooseberries).
+2. Search for OTHER nearby farms **currently open** for **those specific
+   in-season fruits** — search per fruit, e.g. `pick your own blueberries near
+   Needham MA open now <month> <year>`, `raspberry picking near Needham MA
+   <month> <year>`. Use `WebSearch` to find candidates.
+3. For each candidate, **confirm it is actually picking that fruit right now** —
+   read its "what's picking" / PYO page through the Jina reader, or a very recent
+   (~last 10 days) social post.
+
+**Never include a farm based on typical season — only current, confirmed
+availability.** In particular: there are **many apple orchards** around here, but
+apples are a **fall** crop, so do **not** list an apple farm unless apples are
+genuinely being picked *today*. The same rule applies to every fruit: if you
+can't confirm it's open this week, leave it out.
+
+Keep discovery **small and bounded** — a handful of confirmed farms is plenty (the
+dashboard only shows the nearest few per fruit anyway). For each discovered farm,
+estimate `driveMinutes` from Needham (rough is fine) and mark `"home": false`. If
+you can't confirm any nearby farms, that's fine — just publish the home farms.
 
 ## How to fetch — use the Jina reader, NOT WebFetch
 
-The farm sites **block direct fetches** from this environment (they return HTTP
-403 — datacenter-IP / bot protection), and some are JS/image-heavy. **Never fetch
-a farm URL directly** — always go through the **Jina reader proxy**, which loads
-the page from its own servers (bypassing the 403) and renders JS/images to clean
-markdown. Prefix the farm URL with `https://r.jina.ai/`. So the three targets are:
+The farm sites **block direct fetches** from this environment (HTTP 403 —
+datacenter-IP / bot protection), and some are JS/image-heavy. **Never fetch a farm
+URL directly** — always go through the **Jina reader proxy**, which loads the page
+from its own servers (bypassing the 403) and renders JS/images to clean markdown.
+Prefix the farm URL with `https://r.jina.ai/`, e.g.
+`https://r.jina.ai/https://www.tougasfamilyfarm.com/whats-picking`.
 
-- `https://r.jina.ai/https://www.tougasfamilyfarm.com/whats-picking`
-- `https://r.jina.ai/https://www.wardsberryfarm.com/pick-your-own`
-- `https://r.jina.ai/https://www.lookoutfarm.com/`
+Fetch each reader URL — use whichever works in this environment:
 
-Fetch each of those **reader** URLs. Two ways — use whichever works in this
-environment:
-
-1. **`curl` in Bash** (preferred — returns the full raw text):
+1. **`curl` in Bash** (preferred — full raw text):
    `curl -s --max-time 90 "https://r.jina.ai/https://www.tougasfamilyfarm.com/whats-picking"`
 2. **If Bash has no network / curl fails**, use **`WebFetch` on the same reader
-   URL** (first load it: run `ToolSearch` with `select:WebFetch`, then call
-   `WebFetch(url="https://r.jina.ai/https://www.wardsberryfarm.com/pick-your-own", prompt="List every fruit currently available for pick-your-own and its condition/status.")`).
-   `WebFetch` reaches the network even when Bash can't; pointing it at the reader
-   URL (not the farm) avoids the 403.
+   URL** (first load it: run `ToolSearch` with `select:WebFetch`, then
+   `WebFetch(url="https://r.jina.ai/<farm-url>", prompt="List every fruit currently available for pick-your-own and its condition/status.")`).
 
-Either way you get the readable page text (e.g. Ward's "Today's Conditions" with
-each fruit + condition, Tougas's picking list). Read it and extract the fruit. If
-one reader call fails or is empty, retry it once. Report clearly (print the URL +
-what happened) if a fetch fails, so failures are diagnosable.
+Use the reader for the home farm pages **and** to confirm discovered farms. Use
+`WebSearch` to *find* candidate farms, then confirm each via its page through the
+reader. If a reader call fails or is empty, retry once and print the URL + what
+happened.
 
-## What to record
+## What to record (fruit only)
 
-- For each farm, list **every FRUIT** shown as currently available / picking today
-  (on Ward's, that's the fruits in "Today's Conditions"; on Tougas, the "picking
-  today" list). List them all, not just the first one or two.
-- **Fruit only.** Never include flowers (sunflowers, tulips, "flowers"),
-  vegetables, or herbs.
-- Any fruit type — not a preset list. Include gooseberries, currants,
-  elderberries, etc. if the page shows them.
-- Only include fruit with **real current evidence** on the page. If a farm's page
-  shows nothing pickable right now, include nothing for it. **Never** guess from
-  typical seasons.
+For each farm (home and discovered), list **every FRUIT** currently open for PYO.
+**Fruit only** — never flowers (sunflowers, tulips, "flowers"), vegetables, or
+herbs. Any fruit type (gooseberries, currants, etc.), not a preset list. Only fruit
+with **real current evidence** on the page — never guess from typical seasons.
 
-## Output — `picking.json` (repo root)
-
-One object **per fruit per farm** (a farm with several fruits gets several rows):
+## Output — `picking.json` (repo root), farm-centric
 
 ```json
 {
-  "generatedAt": "2026-07-04T07:05:00-04:00",
-  "crops": [
-    { "crop": "blueberries", "orchard": "Ward's Berry Farm", "status": "good", "url": "https://www.wardsberryfarm.com/pick-your-own" },
-    { "crop": "gooseberries", "orchard": "Ward's Berry Farm", "status": "good", "url": "https://www.wardsberryfarm.com/pick-your-own" },
-    { "crop": "cherries", "orchard": "Tougas Family Farm", "status": "now picking", "url": "https://www.tougasfamilyfarm.com/whats-picking" }
+  "generatedAt": "2026-07-05T07:05:00-04:00",
+  "farms": [
+    {
+      "name": "Ward's Berry Farm",
+      "url": "https://www.wardsberryfarm.com/pick-your-own",
+      "home": true,
+      "driveMinutes": 20,
+      "crops": [
+        { "crop": "blueberries", "status": "good" },
+        { "crop": "gooseberries", "status": "good" }
+      ]
+    },
+    {
+      "name": "Example Berry Farm",
+      "url": "https://www.example.com/pick-your-own",
+      "home": false,
+      "driveMinutes": 18,
+      "crops": [ { "crop": "blueberries", "status": "now picking" } ]
+    }
   ]
 }
 ```
 
 - `generatedAt`: ISO 8601 with `-04:00` offset, set to **now**.
-- `crop`: lowercase, plural fruit name. Not a preset list; **no flowers/veg**.
-- `orchard`: exactly `Tougas Family Farm`, `Ward's Berry Farm`, or `Lookout Farm`.
-- `status`: a short phrase you actually read — e.g. `now picking`, `good`,
-  `excellent`, `ending soon`.
-- `url`: the farm page.
+- `name`: the farm's name (shown verbatim on the dashboard).
+- `url`: the farm's "what's picking" / PYO page (the tap-through link).
+- `home`: `true` for our three farms, `false` for discovered ones.
+- `driveMinutes`: estimated drive time from Needham, MA (integer; rough is fine).
+- `crops`: fruit only; `crop` = lowercase plural; `status` = a short phrase you
+  read (`now picking`, `good`, `excellent`, `ending soon`).
 
-**If every farm fetch fails**, do NOT overwrite `picking.json` — leave the last
-good feed in place and report the error. Only ever write fruit you actually read
-this run.
+Include a farm only if it has ≥1 confirmed fruit. **If all fetches fail**, do NOT
+overwrite `picking.json` — leave the last good feed in place and report the error.
 
 ## Publish to `main`
 
