@@ -1,12 +1,44 @@
 {
-  "generatedAt": "2026-07-05T07:06:46-04:00",
-  "crops": [
-    { "crop": "blueberries", "orchard": "Tougas Family Farm", "status": "now picking", "url": "https://www.tougasfamilyfarm.com/whats-picking" },
-    { "crop": "cherries", "orchard": "Tougas Family Farm", "status": "now picking", "url": "https://www.tougasfamilyfarm.com/whats-picking" },
-    { "crop": "blueberries", "orchard": "Ward's Berry Farm", "status": "good", "url": "https://www.wardsberryfarm.com/pick-your-own" },
-    { "crop": "currants", "orchard": "Ward's Berry Farm", "status": "excellent", "url": "https://www.wardsberryfarm.com/pick-your-own" },
-    { "crop": "gooseberries", "orchard": "Ward's Berry Farm", "status": "good", "url": "https://www.wardsberryfarm.com/pick-your-own" },
-    { "crop": "raspberries", "orchard": "Ward's Berry Farm", "status": "excellent", "url": "https://www.wardsberryfarm.com/pick-your-own" },
-    { "crop": "strawberries", "orchard": "Ward's Berry Farm", "status": "fair", "url": "https://www.wardsberryfarm.com/pick-your-own" }
+  "generatedAt": "2026-07-05T15:48:50-04:00",
+  "farms": [
+    {
+      "name": "Ward's Berry Farm",
+      "url": "https://www.wardsberryfarm.com/pick-your-own",
+      "home": true,
+      "driveMinutes": 25,
+      "crops": [
+        { "crop": "raspberries", "status": "excellent" },
+        { "crop": "currants", "status": "excellent" },
+        { "crop": "blueberries", "status": "good" },
+        { "crop": "gooseberries", "status": "good" },
+        { "crop": "strawberries", "status": "fair" }
+      ]
+    },
+    {
+      "name": "Tougas Family Farm",
+      "url": "https://www.tougasfamilyfarm.com/whats-picking",
+      "home": true,
+      "driveMinutes": 35,
+      "crops": [
+        { "crop": "blueberries", "status": "now picking" }
+      ]
+    },
+    {
+      "name": "Belkin Family Lookout Farm",
+      "url": "https://www.lookoutfarm.com/",
+      "home": true,
+      "driveMinutes": 15,
+      "crops": []
+    },
+    {
+      "name": "Tangerini's Spring Street Farm",
+      "url": "https://www.tangerinisfarm.com/upick",
+      "home": false,
+      "driveMinutes": 20,
+      "crops": [
+        { "crop": "blueberries", "status": "now open" },
+        { "crop": "strawberries", "status": "now open" }
+      ]
+    }
   ]
 }
