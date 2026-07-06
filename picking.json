@@ -1,18 +1,12 @@
 {
-  "generatedAt": "2026-07-05T15:48:50-04:00",
+  "generatedAt": "2026-07-06T07:07:00-04:00",
   "farms": [
     {
       "name": "Ward's Berry Farm",
       "url": "https://www.wardsberryfarm.com/pick-your-own",
       "home": true,
       "driveMinutes": 25,
-      "crops": [
-        { "crop": "raspberries", "status": "excellent" },
-        { "crop": "currants", "status": "excellent" },
-        { "crop": "blueberries", "status": "good" },
-        { "crop": "gooseberries", "status": "good" },
-        { "crop": "strawberries", "status": "fair" }
-      ]
+      "crops": []
     },
     {
       "name": "Tougas Family Farm",
