@@ -1,23 +1,38 @@
 {
-  "generatedAt": "2026-07-03T08:15:00-04:00",
-  "crops": [
+  "generatedAt": "2026-07-06T07:07:00-04:00",
+  "farms": [
     {
-      "crop": "strawberries",
-      "orchard": "Ward's Berry Farm",
-      "status": "now picking",
-      "url": "https://www.wardsberryfarm.com/pick-your-own"
+      "name": "Ward's Berry Farm",
+      "url": "https://www.wardsberryfarm.com/pick-your-own",
+      "home": true,
+      "driveMinutes": 25,
+      "crops": []
     },
     {
-      "crop": "blueberries",
-      "orchard": "Ward's Berry Farm",
-      "status": "now picking",
-      "url": "https://www.wardsberryfarm.com/pick-your-own"
+      "name": "Tougas Family Farm",
+      "url": "https://www.tougasfamilyfarm.com/whats-picking",
+      "home": true,
+      "driveMinutes": 35,
+      "crops": [
+        { "crop": "blueberries", "status": "now picking" }
+      ]
     },
     {
-      "crop": "blueberries",
-      "orchard": "Tougas Family Farm",
-      "status": "now picking",
-      "url": "https://www.tougasfamilyfarm.com/whats-picking"
+      "name": "Belkin Family Lookout Farm",
+      "url": "https://www.lookoutfarm.com/",
+      "home": true,
+      "driveMinutes": 15,
+      "crops": []
+    },
+    {
+      "name": "Tangerini's Spring Street Farm",
+      "url": "https://www.tangerinisfarm.com/upick",
+      "home": false,
+      "driveMinutes": 20,
+      "crops": [
+        { "crop": "blueberries", "status": "now open" },
+        { "crop": "strawberries", "status": "now open" }
+      ]
     }
   ]
 }
