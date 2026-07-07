@@ -1,12 +1,18 @@
 {
-  "generatedAt": "2026-07-06T07:07:00-04:00",
+  "generatedAt": "2026-07-07T07:10:00-04:00",
   "farms": [
     {
       "name": "Ward's Berry Farm",
       "url": "https://www.wardsberryfarm.com/pick-your-own",
       "home": true,
       "driveMinutes": 25,
-      "crops": []
+      "crops": [
+        { "crop": "blueberries", "status": "phenomenal" },
+        { "crop": "raspberries", "status": "excellent" },
+        { "crop": "strawberries", "status": "good" },
+        { "crop": "currants", "status": "excellent" },
+        { "crop": "gooseberries", "status": "good" }
+      ]
     },
     {
       "name": "Tougas Family Farm",
@@ -19,19 +25,20 @@
     },
     {
       "name": "Belkin Family Lookout Farm",
-      "url": "https://www.lookoutfarm.com/",
+      "url": "https://www.lookoutfarm.com/pickyourown",
       "home": true,
       "driveMinutes": 15,
       "crops": []
     },
     {
-      "name": "Tangerini's Spring Street Farm",
-      "url": "https://www.tangerinisfarm.com/upick",
+      "name": "Nourse Farm",
+      "url": "https://www.noursefarm.com/pickyourown",
       "home": false,
-      "driveMinutes": 20,
+      "driveMinutes": 30,
       "crops": [
-        { "crop": "blueberries", "status": "now open" },
-        { "crop": "strawberries", "status": "now open" }
+        { "crop": "blueberries", "status": "now picking" },
+        { "crop": "raspberries", "status": "now picking" },
+        { "crop": "red currants", "status": "now picking" }
       ]
     }
   ]
