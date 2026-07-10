@@ -1,1 +1,54 @@
-ewogICJnZW5lcmF0ZWRBdCI6ICIyMDI2LTA3LTA5VDA3OjExOjQ0LTA0OjAwIiwKICAiZmFybXMiOiBbCiAgICB7CiAgICAgICJuYW1lIjogIldhcmQncyBCZXJyeSBGYXJtIiwKICAgICAgInVybCI6ICJodHRwczovL3d3dy53YXJkc2JlcnJ5ZmFybS5jb20vcGljay15b3VyLW93biIsCiAgICAgICJob21lIjogdHJ1ZSwKICAgICAgImRyaXZlTWludXRlcyI6IDI1LAogICAgICAiY3JvcHMiOiBbCiAgICAgICAgeyAiY3JvcCI6ICJibHVlYmVycmllcyIsICJzdGF0dXMiOiAibm93IHBpY2tpbmciIH0sCiAgICAgICAgeyAiY3JvcCI6ICJyYXNwYmVycmllcyIsICJzdGF0dXMiOiAibm93IHBpY2tpbmciIH0KICAgICAgXQogICAgfSwKICAgIHsKICAgICAgIm5hbWUiOiAiVG91Z2FzIEZhbWlseSBGYXJtIiwKICAgICAgInVybCI6ICJodHRwczovL3d3dy50b3VnYXNmYW1pbHlmYXJtLmNvbS93aGF0cy1waWNraW5nIiwKICAgICAgImhvbWUiOiB0cnVlLAogICAgICAiZHJpdmVNaW51dGVzIjogMzUsCiAgICAgICJjcm9wcyI6IFsKICAgICAgICB7ICJjcm9wIjogImJsdWViZXJyaWVzIiwgInN0YXR1cyI6ICJub3cgcGlja2luZyIgfQogICAgICBdCiAgICB9LAogICAgewogICAgICAibmFtZSI6ICJCZWxraW4gRmFtaWx5IExvb2tvdXQgRmFybSIsCiAgICAgICJ1cmwiOiAiaHR0cHM6Ly93d3cubG9va291dGZhcm0uY29tL3BpY2t5b3Vyb3duIiwKICAgICAgImhvbWUiOiB0cnVlLAogICAgICAiZHJpdmVNaW51dGVzIjogMTUsCiAgICAgICJjcm9wcyI6IFtdCiAgICB9LAogICAgewogICAgICAibmFtZSI6ICJOb3Vyc2UgRmFybSIsCiAgICAgICJ1cmwiOiAiaHR0cHM6Ly93d3cubm91cnNlZmFybS5jb20vcGlja3lvdXJvd24iLAogICAgICAiaG9tZSI6IGZhbHNlLAogICAgICAiZHJpdmVNaW51dGVzIjogMzAsCiAgICAgICJjcm9wcyI6IFsKICAgICAgICB7ICJjcm9wIjogImJsdWViZXJyaWVzIiwgInN0YXR1cyI6ICJub3cgcGlja2luZyIgfSwKICAgICAgICB7ICJjcm9wIjogInJhc3BiZXJyaWVzIiwgInN0YXR1cyI6ICJub3cgcGlja2luZyIgfSwKICAgICAgICB7ICJjcm9wIjogInJlZCBjdXJyYW50cyIsICJzdGF0dXMiOiAibm93IHBpY2tpbmciIH0KICAgICAgXQogICAgfSwKICAgIHsKICAgICAgIm5hbWUiOiAiVGFuZ2VyaW5pJ3MgRmFybSIsCiAgICAgICJ1cmwiOiAiaHR0cHM6Ly93d3cudGFuZ2VyaW5pc2Zhcm0uY29tL3VwaWNrIiwKICAgICAgImhvbWUiOiBmYWxzZSwKICAgICAgImRyaXZlTWludXRlcyI6IDIwLAogICAgICAiY3JvcHMiOiBbCiAgICAgICAgeyAiY3JvcCI6ICJibHVlYmVycmllcyIsICJzdGF0dXMiOiAibm93IHBpY2tpbmciIH0KICAgICAgXQogICAgfQogIF0KfQo=
+{
+  "generatedAt": "2026-07-10T07:10:15-04:00",
+  "farms": [
+    {
+      "name": "Ward's Berry Farm",
+      "url": "https://www.wardsberryfarm.com/pick-your-own",
+      "home": true,
+      "driveMinutes": 25,
+      "crops": [
+        { "crop": "strawberries", "status": "fair and limited" },
+        { "crop": "blueberries", "status": "excellent" },
+        { "crop": "raspberries", "status": "good" },
+        { "crop": "currants", "status": "good" },
+        { "crop": "gooseberries", "status": "good" }
+      ]
+    },
+    {
+      "name": "Tougas Family Farm",
+      "url": "https://www.tougasfamilyfarm.com/whats-picking",
+      "home": true,
+      "driveMinutes": 35,
+      "crops": [
+        { "crop": "blueberries", "status": "now picking" }
+      ]
+    },
+    {
+      "name": "Belkin Family Lookout Farm",
+      "url": "https://www.lookoutfarm.com/",
+      "home": true,
+      "driveMinutes": 15,
+      "crops": []
+    },
+    {
+      "name": "Nourse Farm",
+      "url": "https://www.noursefarm.com/pickyourown",
+      "home": false,
+      "driveMinutes": 27,
+      "crops": [
+        { "crop": "blueberries", "status": "now picking" },
+        { "crop": "raspberries", "status": "now picking" },
+        { "crop": "currants", "status": "now picking" }
+      ]
+    },
+    {
+      "name": "Tangerini's Farm",
+      "url": "https://www.tangerinisfarm.com",
+      "home": false,
+      "driveMinutes": 20,
+      "crops": [
+        { "crop": "blueberries", "status": "now picking" }
+      ]
+    }
+  ]
+}
