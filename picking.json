@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-11T07:13:00-04:00",
+  "generatedAt": "2026-07-12T07:31:29-04:00",
   "farms": [
     {
       "name": "Ward's Berry Farm",
@@ -8,9 +8,7 @@
       "driveMinutes": 20,
       "crops": [
         { "crop": "blueberries", "status": "excellent" },
-        { "crop": "raspberries", "status": "good" },
-        { "crop": "currants", "status": "good" },
-        { "crop": "gooseberries", "status": "good" }
+        { "crop": "currants", "status": "good" }
       ]
     },
     {
@@ -19,8 +17,23 @@
       "home": true,
       "driveMinutes": 35,
       "crops": [
-        { "crop": "blueberries", "status": "now picking" },
-        { "crop": "sweet cherries", "status": "now picking" }
+        { "crop": "blueberries", "status": "now picking" }
+      ]
+    },
+    {
+      "name": "Lookout Farm",
+      "url": "https://www.lookoutfarm.com/",
+      "home": true,
+      "driveMinutes": 15,
+      "crops": []
+    },
+    {
+      "name": "Tangerini's Farm",
+      "url": "https://www.tangerinisfarm.com/upick",
+      "home": false,
+      "driveMinutes": 18,
+      "crops": [
+        { "crop": "blueberries", "status": "now picking" }
       ]
     },
     {
@@ -30,17 +43,7 @@
       "driveMinutes": 27,
       "crops": [
         { "crop": "blueberries", "status": "now picking" },
-        { "crop": "red raspberries", "status": "now picking" },
         { "crop": "red currants", "status": "now picking" }
-      ]
-    },
-    {
-      "name": "Tangerini's Farm",
-      "url": "https://www.tangerinisfarm.com/upick",
-      "home": false,
-      "driveMinutes": 18,
-      "crops": [
-        { "crop": "blueberries", "status": "now picking" }
       ]
     }
   ]
