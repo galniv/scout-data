@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-13T07:07:51-04:00",
+  "generatedAt": "2026-07-14T07:12:17-04:00",
   "farms": [
     {
       "name": "Ward's Berry Farm",
@@ -8,9 +8,8 @@
       "driveMinutes": 20,
       "crops": [
         { "crop": "blueberries", "status": "excellent" },
-        { "crop": "raspberries", "status": "good but limited" },
-        { "crop": "currants", "status": "good" },
-        { "crop": "strawberries", "status": "fair and limited" }
+        { "crop": "raspberries", "status": "now picking" },
+        { "crop": "currants", "status": "good" }
       ]
     },
     {
@@ -28,6 +27,16 @@
       "home": true,
       "driveMinutes": 15,
       "crops": []
+    },
+    {
+      "name": "Sunshine Farm",
+      "url": "http://www.sunshinefarmma.com",
+      "home": false,
+      "driveMinutes": 17,
+      "crops": [
+        { "crop": "blueberries", "status": "now picking" },
+        { "crop": "raspberries", "status": "now picking" }
+      ]
     },
     {
       "name": "Tangerini's Farm",
