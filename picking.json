@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-15T11:10:15-04:00",
+  "generatedAt": "2026-07-16T07:09:29-04:00",
   "farms": [
     {
       "name": "Ward's Berry Farm",
@@ -7,8 +7,10 @@
       "home": true,
       "driveMinutes": 20,
       "crops": [
-        { "crop": "blueberries", "status": "now picking" },
-        { "crop": "raspberries", "status": "now picking" }
+        { "crop": "blueberries", "status": "excellent" },
+        { "crop": "raspberries", "status": "good" },
+        { "crop": "currants", "status": "good" },
+        { "crop": "blackberries", "status": "excellent but limited" }
       ]
     },
     {
