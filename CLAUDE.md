@@ -88,6 +88,26 @@ For each farm (home and discovered), list **every FRUIT** currently open for PYO
 herbs. Any fruit type (gooseberries, currants, etc.), not a preset list. Only fruit
 with **real current evidence** on the page — never guess from typical seasons.
 
+## Normalize crop names (required)
+
+Crop names must be **canonical** and consistent across runs — that's what lets the
+automatic season tracking (`seasons.json`) stay consistent for free. Canonical
+names and their accepted variants live in **`aliases.json`** (canonical →
+variants). Don't eyeball it — use the scripts:
+
+1. After writing `picking.json`, run **`python3 scripts/normalize_picking.py`**.
+   It rewrites known crop names to their canonical form in place.
+2. If it exits non-zero it lists **UNKNOWN** crops (no alias entry yet). For each,
+   decide: a spelling/variant of a fruit already in `aliases.json`, or a genuinely
+   new fruit?
+   - Variant of an existing canonical → `python3 scripts/add_alias.py "<crop as read>" <canonical>` (e.g. `add_alias.py "highbush blueberry" blueberries`).
+   - A new fruit → `python3 scripts/add_fruit.py <canonical> ["<variant>" ...]` (canonical = lowercase plural, e.g. `add_fruit.py figs fig`).
+   Then re-run `normalize_picking.py`. Repeat until it exits 0.
+3. **Never hand-edit `aliases.json`** — always go through the scripts (they
+   validate, de-dupe, and keep it sorted, so a stray character can't break it).
+
+If `aliases.json` changed this run, publish it alongside `picking.json` (see Publish).
+
 ## Output — `picking.json` (repo root), farm-centric
 
 ```json
@@ -120,8 +140,12 @@ with **real current evidence** on the page — never guess from typical seasons.
 - `url`: the farm's "what's picking" / PYO page (the tap-through link).
 - `home`: `true` for our three farms, `false` for discovered ones.
 - `driveMinutes`: estimated drive time from Needham, MA (integer; rough is fine).
-- `crops`: fruit only; `crop` = lowercase plural; `status` = a short phrase you
-  read (`now picking`, `good`, `excellent`, `ending soon`).
+- `crops`: fruit only; `crop` = lowercase plural **and canonical** (run through
+  `normalize_picking.py` — see "Normalize crop names"); `status` = a short phrase
+  you read (`now picking`, `good`, `excellent`, `ending soon`).
+
+This farm-centric shape is the **only** shape — there's no legacy/crop-centric
+fallback anymore.
 
 Include a farm only if it has ≥1 confirmed fruit. **If all fetches fail**, do NOT
 overwrite `picking.json` — leave the last good feed in place and report the error.
@@ -142,3 +166,15 @@ gh api -X PUT repos/galniv/scout-data/contents/picking.json \
 ```
 
 Confirm the response contains a new `commit`.
+
+If `aliases.json` changed this run (you added a variant or a new fruit), publish
+it the same way — a second `gh api -X PUT …/contents/aliases.json` with its own
+`sha`.
+
+### `seasons.json` is automatic — never touch it
+
+`seasons.json` (per fruit, the `start`/`lastSeen` date each year) is maintained
+**deterministically by a GitHub Action** that runs whenever `picking.json` is
+pushed (`.github/workflows/seasons.yml` → `scripts/update_seasons.py`). The
+routine must **never** write, edit, or publish `seasons.json` — it maintains
+itself from the canonical `picking.json`.

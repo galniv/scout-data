@@ -1,0 +1,92 @@
+{
+  "apples": [
+    "apple"
+  ],
+  "apricots": [
+    "apricot"
+  ],
+  "blackberries": [
+    "blackberry"
+  ],
+  "blueberries": [
+    "blueberry",
+    "highbush blueberries",
+    "highbush blueberry",
+    "lowbush blueberries"
+  ],
+  "boysenberries": [
+    "boysenberry"
+  ],
+  "cherries": [
+    "cherry",
+    "sour cherries",
+    "sour cherry",
+    "sweet cherries",
+    "sweet cherry",
+    "tart cherries"
+  ],
+  "currants": [
+    "black currant",
+    "black currants",
+    "currant",
+    "red currant",
+    "red currants",
+    "white currants"
+  ],
+  "elderberries": [
+    "elderberry"
+  ],
+  "figs": [
+    "fig"
+  ],
+  "gooseberries": [
+    "gooseberry"
+  ],
+  "grapes": [
+    "concord grapes",
+    "grape"
+  ],
+  "melons": [
+    "cantaloupe",
+    "cantaloupes",
+    "honeydew",
+    "honeydews",
+    "melon",
+    "watermelon",
+    "watermelons"
+  ],
+  "nectarines": [
+    "nectarine"
+  ],
+  "peaches": [
+    "donut peaches",
+    "doughnut peaches",
+    "peach",
+    "white peaches",
+    "yellow peaches"
+  ],
+  "pears": [
+    "asian pear",
+    "asian pears",
+    "pear"
+  ],
+  "plums": [
+    "plum",
+    "prune plums"
+  ],
+  "pumpkins": [
+    "pumpkin"
+  ],
+  "raspberries": [
+    "black raspberries",
+    "black raspberry",
+    "fall raspberries",
+    "golden raspberries",
+    "raspberry",
+    "red raspberries",
+    "red raspberry"
+  ],
+  "strawberries": [
+    "strawberry"
+  ]
+}
