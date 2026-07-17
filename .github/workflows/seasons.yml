@@ -10,6 +10,7 @@ on:
     branches: [main]
     paths:
       - picking.json
+  workflow_dispatch: {} # allow manual runs (smoke test / reruns)
 
 permissions:
   contents: write
