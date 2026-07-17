@@ -1,1 +1,45 @@
-ewogICJnZW5lcmF0ZWRBdCI6ICIyMDI2LTA3LTE2VDA3OjA5OjI5LTA0OjAwIiwKICAiZmFybXMiOiBbCiAgICB7CiAgICAgICJuYW1lIjogIldhcmQncyBCZXJyeSBGYXJtIiwKICAgICAgInVybCI6ICJodHRwczovL3d3dy53YXJkc2JlcnJ5ZmFybS5jb20vcGljay15b3VyLW93biIsCiAgICAgICJob21lIjogdHJ1ZSwKICAgICAgImRyaXZlTWludXRlcyI6IDIwLAogICAgICAiY3JvcHMiOiBbCiAgICAgICAgeyAiY3JvcCI6ICJibHVlYmVycmllcyIsICJzdGF0dXMiOiAiZXhjZWxsZW50IiB9LAogICAgICAgIHsgImNyb3AiOiAicmFzcGJlcnJpZXMiLCAic3RhdHVzIjogImdvb2QiIH0sCiAgICAgICAgeyAiY3JvcCI6ICJjdXJyYW50cyIsICJzdGF0dXMiOiAiZ29vZCIgfSwKICAgICAgICB7ICJjcm9wIjogImJsYWNrYmVycmllcyIsICJzdGF0dXMiOiAiZXhjZWxsZW50IGJ1dCBsaW1pdGVkIiB9CiAgICAgIF0KICAgIH0sCiAgICB7CiAgICAgICJuYW1lIjogIlRvdWdhcyBGYW1pbHkgRmFybSIsCiAgICAgICJ1cmwiOiAiaHR0cHM6Ly93d3cudG91Z2FzZmFtaWx5ZmFybS5jb20vd2hhdHMtcGlja2luZyIsCiAgICAgICJob21lIjogdHJ1ZSwKICAgICAgImRyaXZlTWludXRlcyI6IDM1LAogICAgICAiY3JvcHMiOiBbCiAgICAgICAgeyAiY3JvcCI6ICJibHVlYmVycmllcyIsICJzdGF0dXMiOiAibm93IHBpY2tpbmciIH0KICAgICAgXQogICAgfSwKICAgIHsKICAgICAgIm5hbWUiOiAiTG9va291dCBGYXJtIiwKICAgICAgInVybCI6ICJodHRwczovL3d3dy5sb29rb3V0ZmFybS5jb20vIiwKICAgICAgImhvbWUiOiB0cnVlLAogICAgICAiZHJpdmVNaW51dGVzIjogMTUsCiAgICAgICJjcm9wcyI6IFtdCiAgICB9LAogICAgewogICAgICAibmFtZSI6ICJUYW5nZXJpbmkncyBGYXJtIiwKICAgICAgInVybCI6ICJodHRwczovL3d3dy50YW5nZXJpbmlzZmFybS5jb20vdXBpY2siLAogICAgICAiaG9tZSI6IGZhbHNlLAogICAgICAiZHJpdmVNaW51dGVzIjogMTgsCiAgICAgICJjcm9wcyI6IFsKICAgICAgICB7ICJjcm9wIjogImJsdWViZXJyaWVzIiwgInN0YXR1cyI6ICJub3cgcGlja2luZyIgfQogICAgICBdCiAgICB9LAogICAgewogICAgICAibmFtZSI6ICJOb3Vyc2UgRmFybSIsCiAgICAgICJ1cmwiOiAiaHR0cHM6Ly93d3cubm91cnNlZmFybS5jb20vcGlja3lvdXJvd24iLAogICAgICAiaG9tZSI6IGZhbHNlLAogICAgICAiZHJpdmVNaW51dGVzIjogMjcsCiAgICAgICJjcm9wcyI6IFsKICAgICAgICB7ICJjcm9wIjogImJsdWViZXJyaWVzIiwgInN0YXR1cyI6ICJub3cgcGlja2luZyIgfSwKICAgICAgICB7ICJjcm9wIjogInJlZCByYXNwYmVycmllcyIsICJzdGF0dXMiOiAibm93IHBpY2tpbmciIH0sCiAgICAgICAgeyAiY3JvcCI6ICJibGFjayByYXNwYmVycmllcyIsICJzdGF0dXMiOiAibm93IHBpY2tpbmciIH0sCiAgICAgICAgeyAiY3JvcCI6ICJyZWQgY3VycmFudHMiLCAic3RhdHVzIjogIm5vdyBwaWNraW5nIiB9CiAgICAgIF0KICAgIH0KICBdCn0K
+{
+  "generatedAt": "2026-07-17T07:10:00-04:00",
+  "farms": [
+    {
+      "name": "Ward's Berry Farm",
+      "url": "https://www.wardsberryfarm.com/pick-your-own",
+      "home": true,
+      "driveMinutes": 20,
+      "crops": [
+        { "crop": "blueberries", "status": "excellent" },
+        { "crop": "blackberries", "status": "excellent but limited" },
+        { "crop": "raspberries", "status": "good but limited" },
+        { "crop": "currants", "status": "fair" },
+        { "crop": "strawberries", "status": "fair and limited" }
+      ]
+    },
+    {
+      "name": "Lookout Farm",
+      "url": "https://www.lookoutfarm.com/pickyourown",
+      "home": true,
+      "driveMinutes": 15,
+      "crops": [
+        { "crop": "peaches", "status": "now picking" }
+      ]
+    },
+    {
+      "name": "Tougas Family Farm",
+      "url": "https://www.tougasfamilyfarm.com/whats-picking",
+      "home": true,
+      "driveMinutes": 35,
+      "crops": [
+        { "crop": "blueberries", "status": "now picking" }
+      ]
+    },
+    {
+      "name": "Tangerini's Farm",
+      "url": "https://www.tangerinisfarm.com/upick",
+      "home": false,
+      "driveMinutes": 18,
+      "crops": [
+        { "crop": "blueberries", "status": "now picking" }
+      ]
+    }
+  ]
+}
