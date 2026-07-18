@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-17T07:10:00-04:00",
+  "generatedAt": "2026-07-18T07:05:00-04:00",
   "farms": [
     {
       "name": "Ward's Berry Farm",
@@ -7,11 +7,26 @@
       "home": true,
       "driveMinutes": 20,
       "crops": [
-        { "crop": "blueberries", "status": "excellent" },
-        { "crop": "blackberries", "status": "excellent but limited" },
-        { "crop": "raspberries", "status": "good but limited" },
-        { "crop": "currants", "status": "fair" },
-        { "crop": "strawberries", "status": "fair and limited" }
+        {
+          "crop": "blueberries",
+          "status": "excellent"
+        },
+        {
+          "crop": "blackberries",
+          "status": "excellent but limited"
+        },
+        {
+          "crop": "raspberries",
+          "status": "good but limited"
+        },
+        {
+          "crop": "currants",
+          "status": "fair"
+        },
+        {
+          "crop": "strawberries",
+          "status": "fair and limited"
+        }
       ]
     },
     {
@@ -20,7 +35,10 @@
       "home": true,
       "driveMinutes": 15,
       "crops": [
-        { "crop": "peaches", "status": "now picking" }
+        {
+          "crop": "peaches",
+          "status": "now picking"
+        }
       ]
     },
     {
@@ -29,7 +47,10 @@
       "home": true,
       "driveMinutes": 35,
       "crops": [
-        { "crop": "blueberries", "status": "now picking" }
+        {
+          "crop": "blueberries",
+          "status": "now picking"
+        }
       ]
     },
     {
@@ -38,7 +59,22 @@
       "home": false,
       "driveMinutes": 18,
       "crops": [
-        { "crop": "blueberries", "status": "now picking" }
+        {
+          "crop": "blueberries",
+          "status": "now picking"
+        }
+      ]
+    },
+    {
+      "name": "Sunshine Farm",
+      "url": "https://www.facebook.com/p/Sunshine-Farm-100063557051344/",
+      "home": false,
+      "driveMinutes": 13,
+      "crops": [
+        {
+          "crop": "blueberries",
+          "status": "now picking"
+        }
       ]
     }
   ]
