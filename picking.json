@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-18T07:05:00-04:00",
+  "generatedAt": "2026-07-19T07:05:00-04:00",
   "farms": [
     {
       "name": "Ward's Berry Farm",
@@ -8,12 +8,12 @@
       "driveMinutes": 20,
       "crops": [
         {
-          "crop": "blueberries",
+          "crop": "peaches",
           "status": "excellent"
         },
         {
-          "crop": "blackberries",
-          "status": "excellent but limited"
+          "crop": "blueberries",
+          "status": "excellent"
         },
         {
           "crop": "raspberries",
@@ -24,8 +24,8 @@
           "status": "fair"
         },
         {
-          "crop": "strawberries",
-          "status": "fair and limited"
+          "crop": "blackberries",
+          "status": "excellent but limited"
         }
       ]
     },
@@ -50,6 +50,10 @@
         {
           "crop": "blueberries",
           "status": "now picking"
+        },
+        {
+          "crop": "blackberries",
+          "status": "now picking"
         }
       ]
     },
@@ -58,18 +62,6 @@
       "url": "https://www.tangerinisfarm.com/upick",
       "home": false,
       "driveMinutes": 18,
-      "crops": [
-        {
-          "crop": "blueberries",
-          "status": "now picking"
-        }
-      ]
-    },
-    {
-      "name": "Sunshine Farm",
-      "url": "https://www.facebook.com/p/Sunshine-Farm-100063557051344/",
-      "home": false,
-      "driveMinutes": 13,
       "crops": [
         {
           "crop": "blueberries",
