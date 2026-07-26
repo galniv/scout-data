@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-25T07:30:00-04:00",
+  "generatedAt": "2026-07-26T07:09:00-04:00",
   "farms": [
     {
       "name": "Ward's Berry Farm",
@@ -17,7 +17,7 @@
         },
         {
           "crop": "currants",
-          "status": "good, pink only"
+          "status": "fair, pink only"
         }
       ]
     },
@@ -33,7 +33,7 @@
         },
         {
           "crop": "apples",
-          "status": "now picking"
+          "status": "now picking (Pristine)"
         }
       ]
     },
@@ -45,11 +45,7 @@
       "crops": [
         {
           "crop": "blueberries",
-          "status": "excellent"
-        },
-        {
-          "crop": "blackberries",
-          "status": "just beginning"
+          "status": "now picking"
         }
       ]
     },
@@ -61,7 +57,7 @@
       "crops": [
         {
           "crop": "blueberries",
-          "status": "now picking"
+          "status": "open daily 9am-noon"
         }
       ]
     },
@@ -73,22 +69,6 @@
       "crops": [
         {
           "crop": "blueberries",
-          "status": "now picking"
-        }
-      ]
-    },
-    {
-      "name": "Nourse Farm",
-      "url": "https://www.noursefarm.com/pickyourown",
-      "home": false,
-      "driveMinutes": 30,
-      "crops": [
-        {
-          "crop": "blueberries",
-          "status": "now picking"
-        },
-        {
-          "crop": "raspberries",
           "status": "now picking"
         }
       ]
