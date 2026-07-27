@@ -2,19 +2,19 @@
   "apples": {
     "2026": {
       "start": "2026-07-25",
-      "lastSeen": "2026-07-26"
+      "lastSeen": "2026-07-27"
     }
   },
   "blackberries": {
     "2026": {
       "start": "2026-07-17",
-      "lastSeen": "2026-07-25"
+      "lastSeen": "2026-07-27"
     }
   },
   "blueberries": {
     "2026": {
       "start": "2026-07-03",
-      "lastSeen": "2026-07-26"
+      "lastSeen": "2026-07-27"
     }
   },
   "cherries": {
@@ -38,13 +38,13 @@
   "peaches": {
     "2026": {
       "start": "2026-07-17",
-      "lastSeen": "2026-07-26"
+      "lastSeen": "2026-07-27"
     }
   },
   "raspberries": {
     "2026": {
       "start": "2026-07-04",
-      "lastSeen": "2026-07-25"
+      "lastSeen": "2026-07-27"
     }
   },
   "strawberries": {
