@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-27T07:22:20-04:00",
+  "generatedAt": "2026-07-28T07:19:42-04:00",
   "farms": [
     {
       "name": "Ward's Berry Farm",
@@ -9,11 +9,15 @@
       "crops": [
         {
           "crop": "blueberries",
-          "status": "now picking"
+          "status": "excellent"
         },
         {
-          "crop": "raspberries",
-          "status": "now picking"
+          "crop": "peaches",
+          "status": "excellent"
+        },
+        {
+          "crop": "currants",
+          "status": "fair, limited"
         }
       ]
     },
@@ -25,11 +29,11 @@
       "crops": [
         {
           "crop": "peaches",
-          "status": "now picking (yellow and white)"
+          "status": "now picking"
         },
         {
           "crop": "apples",
-          "status": "now picking (Pristine)"
+          "status": "early season"
         }
       ]
     },
@@ -41,23 +45,11 @@
       "crops": [
         {
           "crop": "blueberries",
-          "status": "peak season"
+          "status": "now picking"
         },
         {
           "crop": "blackberries",
           "status": "just beginning"
-        }
-      ]
-    },
-    {
-      "name": "Sunshine Farm",
-      "url": "http://www.sunshinefarmma.com/",
-      "home": false,
-      "driveMinutes": 20,
-      "crops": [
-        {
-          "crop": "blueberries",
-          "status": "open daily 9am-noon"
         }
       ]
     },
