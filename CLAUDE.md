@@ -152,24 +152,24 @@ overwrite `picking.json` — leave the last good feed in place and report the er
 
 ## Publish to `main`
 
-The sandbox's own git is read-only, so commit via the GitHub Contents API with the
-authenticated `gh` CLI:
+The routine's sandbox git is read-only, so publish over the GitHub Contents API —
+but **always use the publish script; never hand-run `base64` / `gh api`**. A
+hand-run publish double-base64-encoded `picking.json` on 2026-07-29 and broke the
+feed (and the dashboard). The script encodes exactly once and **refuses to publish
+anything that isn't valid JSON**, so that can't recur:
 
 ```bash
-SHA=$(gh api repos/galniv/scout-data/contents/picking.json --jq .sha 2>/dev/null)
-B64=$(base64 < picking.json | tr -d '\n')
-gh api -X PUT repos/galniv/scout-data/contents/picking.json \
-  -f message="Update picking feed" \
-  -f content="$B64" \
-  ${SHA:+-f sha="$SHA"} \
-  -f branch=main
+python3 scripts/publish.py picking.json
 ```
 
-Confirm the response contains a new `commit`.
+Confirm it prints `published picking.json -> commit <sha>`.
 
 If `aliases.json` changed this run (you added a variant or a new fruit), publish
-it the same way — a second `gh api -X PUT …/contents/aliases.json` with its own
-`sha`.
+it in the same call:
+
+```bash
+python3 scripts/publish.py picking.json aliases.json
+```
 
 ### `seasons.json` is automatic — never touch it
 
