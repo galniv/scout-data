@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-30T07:30:00-04:00",
+  "generatedAt": "2026-07-30T08:00:00-04:00",
   "farms": [
     {
       "name": "Ward's Berry Farm",
@@ -30,10 +30,6 @@
         {
           "crop": "peaches",
           "status": "now picking"
-        },
-        {
-          "crop": "apples",
-          "status": "early season"
         }
       ]
     },
@@ -45,23 +41,23 @@
       "crops": [
         {
           "crop": "blueberries",
-          "status": "peak season"
+          "status": "now picking"
         },
         {
           "crop": "blackberries",
-          "status": "just beginning"
+          "status": "limited"
         }
       ]
     },
     {
-      "name": "Tangerini's Spring Street Farm",
-      "url": "https://www.tangerinisfarm.com/pick-your-own",
+      "name": "Gianetti's U-Pick Blueberries",
+      "url": "https://gianettis.com/",
       "home": false,
-      "driveMinutes": 18,
+      "driveMinutes": 22,
       "crops": [
         {
           "crop": "blueberries",
-          "status": "open now"
+          "status": "now picking"
         }
       ]
     }
