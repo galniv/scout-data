@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-29T07:15:16-04:00",
+  "generatedAt": "2026-07-30T07:30:00-04:00",
   "farms": [
     {
       "name": "Ward's Berry Farm",
@@ -13,17 +13,17 @@
         },
         {
           "crop": "peaches",
-          "status": "excellent"
+          "status": "fair"
         },
         {
           "crop": "currants",
-          "status": "fair, limited"
+          "status": "fair and limited"
         }
       ]
     },
     {
       "name": "Lookout Farm",
-      "url": "https://www.lookoutfarm.com/",
+      "url": "https://www.lookoutfarm.com/pickyourown",
       "home": true,
       "driveMinutes": 15,
       "crops": [
@@ -50,6 +50,18 @@
         {
           "crop": "blackberries",
           "status": "just beginning"
+        }
+      ]
+    },
+    {
+      "name": "Tangerini's Spring Street Farm",
+      "url": "https://www.tangerinisfarm.com/pick-your-own",
+      "home": false,
+      "driveMinutes": 18,
+      "crops": [
+        {
+          "crop": "blueberries",
+          "status": "open now"
         }
       ]
     }
