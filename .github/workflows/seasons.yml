@@ -4,7 +4,7 @@ name: Update fruit seasons
 # picking.json via the GitHub Contents API (no local commit), so this runs on
 # the resulting push and maintains seasons.json deterministically. The routine
 # never touches seasons.json. Filtered to picking.json so the bot's own
-# seasons.json commit can't retrigger it.
+# commit can't retrigger it.
 on:
   push:
     branches: [main]
@@ -23,16 +23,21 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      # Deterministic backstop: if the model-driven publish step double-base64
+      # -encoded picking.json (happened 2026-07-29, -30), decode it in place so
+      # the feed + seasons self-heal regardless of how it was published.
+      - name: Repair picking.json if double-encoded
+        run: python3 scripts/repair_picking.py
       - name: Update seasons.json
         run: python3 scripts/update_seasons.py
       - name: Commit if changed
         run: |
-          if [ -n "$(git status --porcelain seasons.json)" ]; then
+          if [ -n "$(git status --porcelain picking.json seasons.json)" ]; then
             git config user.name "scout-seasons-bot"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add seasons.json
-            git commit -m "chore: update fruit seasons [skip ci]"
+            git add picking.json seasons.json
+            git commit -m "chore: repair feed / update seasons [skip ci]"
             git push
           else
-            echo "seasons.json unchanged"
+            echo "picking.json + seasons.json unchanged"
           fi
