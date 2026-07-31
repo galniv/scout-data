@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-30T08:00:00-04:00",
+  "generatedAt": "2026-07-31T07:15:00-04:00",
   "farms": [
     {
       "name": "Ward's Berry Farm",
@@ -42,10 +42,6 @@
         {
           "crop": "blueberries",
           "status": "now picking"
-        },
-        {
-          "crop": "blackberries",
-          "status": "limited"
         }
       ]
     },
@@ -58,6 +54,22 @@
         {
           "crop": "blueberries",
           "status": "now picking"
+        }
+      ]
+    },
+    {
+      "name": "Nourse Farm",
+      "url": "https://www.noursefarm.com/pickyourown",
+      "home": false,
+      "driveMinutes": 30,
+      "crops": [
+        {
+          "crop": "blueberries",
+          "status": "now picking"
+        },
+        {
+          "crop": "raspberries",
+          "status": "limited"
         }
       ]
     }
