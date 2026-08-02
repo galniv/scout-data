@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-01T07:10:52-04:00",
+  "generatedAt": "2026-08-02T07:13:00-04:00",
   "farms": [
     {
       "name": "Ward's Berry Farm",
@@ -13,11 +13,7 @@
         },
         {
           "crop": "blackberries",
-          "status": "fair and limited"
-        },
-        {
-          "crop": "currants",
-          "status": "fair"
+          "status": "good"
         }
       ]
     },
@@ -58,6 +54,18 @@
       ]
     },
     {
+      "name": "Tangerini's Farm",
+      "url": "https://www.tangerinisfarm.com/upick",
+      "home": false,
+      "driveMinutes": 20,
+      "crops": [
+        {
+          "crop": "blueberries",
+          "status": "now picking"
+        }
+      ]
+    },
+    {
       "name": "Nourse Farm",
       "url": "https://www.noursefarm.com/pickyourown",
       "home": false,
@@ -66,10 +74,18 @@
         {
           "crop": "blueberries",
           "status": "now picking"
-        },
+        }
+      ]
+    },
+    {
+      "name": "Gianetti's U-Pick Blueberries",
+      "url": "https://gianettis.com/",
+      "home": false,
+      "driveMinutes": 22,
+      "crops": [
         {
-          "crop": "raspberries",
-          "status": "limited"
+          "crop": "blueberries",
+          "status": "open Fri & Sat"
         }
       ]
     }
