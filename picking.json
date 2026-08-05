@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-04T07:30:00-04:00",
+  "generatedAt": "2026-08-05T07:18:37-04:00",
   "farms": [
     {
       "name": "Ward's Berry Farm",
@@ -22,10 +22,6 @@
         {
           "crop": "peaches",
           "status": "now picking"
-        },
-        {
-          "crop": "currants",
-          "status": "ending soon"
         }
       ]
     },
@@ -37,10 +33,6 @@
       "crops": [
         {
           "crop": "peaches",
-          "status": "now picking"
-        },
-        {
-          "crop": "nectarines",
           "status": "now picking"
         },
         {
