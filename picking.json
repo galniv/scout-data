@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-07T07:18:21-04:00",
+  "generatedAt": "2026-08-08T07:13:46-04:00",
   "farms": [
     {
       "name": "Ward's Berry Farm",
@@ -8,8 +8,12 @@
       "driveMinutes": 20,
       "crops": [
         {
+          "crop": "peaches",
+          "status": "excellent"
+        },
+        {
           "crop": "blueberries",
-          "status": "good"
+          "status": "excellent"
         }
       ]
     },
@@ -21,6 +25,10 @@
       "crops": [
         {
           "crop": "peaches",
+          "status": "now picking"
+        },
+        {
+          "crop": "apples",
           "status": "now picking"
         }
       ]
