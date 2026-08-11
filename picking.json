@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-10T07:10:00-04:00",
+  "generatedAt": "2026-08-11T07:15:00-04:00",
   "farms": [
     {
       "name": "Ward's Berry Farm",
@@ -46,18 +46,22 @@
         {
           "crop": "peaches",
           "status": "now picking"
+        },
+        {
+          "crop": "blackberries",
+          "status": "now picking"
         }
       ]
     },
     {
-      "name": "Tangerini's Farm",
-      "url": "https://www.tangerinisfarm.com/upick",
+      "name": "Nourse Farm",
+      "url": "https://www.noursefarm.com/pickyourown",
       "home": false,
-      "driveMinutes": 20,
+      "driveMinutes": 30,
       "crops": [
         {
-          "crop": "blueberries",
-          "status": "now picking"
+          "crop": "raspberries",
+          "status": "limited"
         }
       ]
     }
