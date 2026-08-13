@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-12T07:17:00-04:00",
+  "generatedAt": "2026-08-13T07:16:53-04:00",
   "farms": [
     {
       "name": "Ward's Berry Farm",
@@ -13,7 +13,7 @@
         },
         {
           "crop": "blueberries",
-          "status": "good"
+          "status": "excellent"
         }
       ]
     },
@@ -41,6 +41,10 @@
       "crops": [
         {
           "crop": "blueberries",
+          "status": "now picking"
+        },
+        {
+          "crop": "blackberries",
           "status": "now picking"
         },
         {
