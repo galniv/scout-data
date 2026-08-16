@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T07:10:37-04:00",
+  "generatedAt": "2026-08-16T07:16:00-04:00",
   "farms": [
     {
       "name": "Ward's Berry Farm",
@@ -42,26 +42,6 @@
         {
           "crop": "blueberries",
           "status": "now picking"
-        },
-        {
-          "crop": "blackberries",
-          "status": "now picking"
-        },
-        {
-          "crop": "peaches",
-          "status": "now picking"
-        }
-      ]
-    },
-    {
-      "name": "Tangerini's Farm",
-      "url": "https://www.tangerinisfarm.com/upick",
-      "home": false,
-      "driveMinutes": 12,
-      "crops": [
-        {
-          "crop": "blueberries",
-          "status": "now picking"
         }
       ]
     },
@@ -73,7 +53,7 @@
       "crops": [
         {
           "crop": "blackberries",
-          "status": "now available"
+          "status": "now picking"
         }
       ]
     }
