@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T07:16:00-04:00",
+  "generatedAt": "2026-08-17T08:05:00-04:00",
   "farms": [
     {
       "name": "Ward's Berry Farm",
@@ -13,7 +13,7 @@
         },
         {
           "crop": "blueberries",
-          "status": "fair"
+          "status": "good but limited"
         }
       ]
     },
@@ -42,6 +42,14 @@
         {
           "crop": "blueberries",
           "status": "now picking"
+        },
+        {
+          "crop": "peaches",
+          "status": "ending soon"
+        },
+        {
+          "crop": "apples",
+          "status": "early season"
         }
       ]
     },
