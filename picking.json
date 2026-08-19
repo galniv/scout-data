@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T07:30:00-04:00",
+  "generatedAt": "2026-08-19T07:13:00-04:00",
   "farms": [
     {
       "name": "Ward's Berry Farm",
@@ -9,7 +9,7 @@
       "crops": [
         {
           "crop": "blueberries",
-          "status": "fair and limited"
+          "status": "limited"
         }
       ]
     },
