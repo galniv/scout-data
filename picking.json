@@ -1,18 +1,6 @@
 {
-  "generatedAt": "2026-08-20T07:15:00-04:00",
+  "generatedAt": "2026-08-21T07:30:00-04:00",
   "farms": [
-    {
-      "name": "Ward's Berry Farm",
-      "url": "https://www.wardsberryfarm.com/pick-your-own",
-      "home": true,
-      "driveMinutes": 20,
-      "crops": [
-        {
-          "crop": "blueberries",
-          "status": "fair and limited"
-        }
-      ]
-    },
     {
       "name": "Lookout Farm",
       "url": "https://www.lookoutfarm.com/pickyourown",
@@ -37,10 +25,6 @@
       "crops": [
         {
           "crop": "blueberries",
-          "status": "now picking"
-        },
-        {
-          "crop": "blackberries",
           "status": "now picking"
         },
         {
