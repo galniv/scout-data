@@ -1,22 +1,6 @@
 {
-  "generatedAt": "2026-08-21T07:30:00-04:00",
+  "generatedAt": "2026-08-22T07:12:32-04:00",
   "farms": [
-    {
-      "name": "Lookout Farm",
-      "url": "https://www.lookoutfarm.com/pickyourown",
-      "home": true,
-      "driveMinutes": 15,
-      "crops": [
-        {
-          "crop": "peaches",
-          "status": "now picking"
-        },
-        {
-          "crop": "apples",
-          "status": "early season"
-        }
-      ]
-    },
     {
       "name": "Tougas Family Farm",
       "url": "https://www.tougasfamilyfarm.com/whats-picking",
@@ -28,7 +12,15 @@
           "status": "now picking"
         },
         {
+          "crop": "blackberries",
+          "status": "now picking"
+        },
+        {
           "crop": "peaches",
+          "status": "now picking"
+        },
+        {
+          "crop": "nectarines",
           "status": "now picking"
         },
         {
@@ -38,13 +30,69 @@
       ]
     },
     {
+      "name": "Ward's Berry Farm",
+      "url": "https://www.wardsberryfarm.com/pick-your-own",
+      "home": true,
+      "driveMinutes": 20,
+      "crops": [
+        {
+          "crop": "blueberries",
+          "status": "now picking"
+        },
+        {
+          "crop": "raspberries",
+          "status": "now picking"
+        },
+        {
+          "crop": "currants",
+          "status": "now picking"
+        }
+      ]
+    },
+    {
+      "name": "Belkin Family Lookout Farm",
+      "url": "https://www.lookoutfarm.com/pickyourown",
+      "home": true,
+      "driveMinutes": 12,
+      "crops": [
+        {
+          "crop": "peaches",
+          "status": "now picking"
+        },
+        {
+          "crop": "apples",
+          "status": "now picking"
+        },
+        {
+          "crop": "pears",
+          "status": "now picking"
+        }
+      ]
+    },
+    {
       "name": "Hanson's Farm",
       "url": "https://www.hansonsfarmframingham.com/pick-your-own",
       "home": false,
-      "driveMinutes": 15,
+      "driveMinutes": 18,
       "crops": [
         {
           "crop": "blackberries",
+          "status": "now picking"
+        }
+      ]
+    },
+    {
+      "name": "Shelburne Farm",
+      "url": "https://www.shelburnefarm.com/whats-picking-today-apples-peaches-asian-pears.html",
+      "home": false,
+      "driveMinutes": 30,
+      "crops": [
+        {
+          "crop": "apples",
+          "status": "now picking"
+        },
+        {
+          "crop": "peaches",
           "status": "now picking"
         }
       ]
