@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T08:30:00-04:00",
+  "generatedAt": "2026-08-25T07:16:37-04:00",
   "farms": [
     {
       "name": "Tougas Family Farm",
@@ -32,16 +32,8 @@
       "driveMinutes": 20,
       "crops": [
         {
-          "crop": "peaches",
-          "status": "good but limited"
-        },
-        {
           "crop": "grapes",
           "status": "excellent"
-        },
-        {
-          "crop": "pears",
-          "status": "good but limited"
         }
       ]
     },
