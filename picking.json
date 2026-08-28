@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-27T11:18:06-04:00",
+  "generatedAt": "2026-08-28T07:15:32-04:00",
   "farms": [
     {
       "name": "Tougas Family Farm",
@@ -17,6 +17,10 @@
         },
         {
           "crop": "peaches",
+          "status": "now picking"
+        },
+        {
+          "crop": "nectarines",
           "status": "now picking"
         },
         {
