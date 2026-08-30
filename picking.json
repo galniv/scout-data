@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-29T07:20:00-04:00",
+  "generatedAt": "2026-08-30T07:11:00-04:00",
   "farms": [
     {
       "name": "Tougas Family Farm",
@@ -7,14 +7,6 @@
       "home": true,
       "driveMinutes": 35,
       "crops": [
-        {
-          "crop": "blueberries",
-          "status": "last call"
-        },
-        {
-          "crop": "blackberries",
-          "status": "now picking"
-        },
         {
           "crop": "nectarines",
           "status": "now picking"
@@ -34,6 +26,10 @@
         {
           "crop": "grapes",
           "status": "excellent"
+        },
+        {
+          "crop": "pears",
+          "status": "excellent but limited"
         }
       ]
     },
