@@ -103,6 +103,10 @@ variants). Don't eyeball it — use the scripts:
    - Variant of an existing canonical → `python3 scripts/add_alias.py "<crop as read>" <canonical>` (e.g. `add_alias.py "highbush blueberry" blueberries`).
    - A new fruit → `python3 scripts/add_fruit.py <canonical> ["<variant>" ...]` (canonical = lowercase plural, e.g. `add_fruit.py figs fig`).
    Then re-run `normalize_picking.py`. Repeat until it exits 0.
+   - **Exception — Asian pears are their own fruit, not pears.** Usually a
+     "`<descriptor> pear`" (Bosc, Bartlett…) is just a `pears` variant, but
+     **Asian pear / nashi / apple pear / korean pear** are a distinct species and
+     have their own canonical **`asian pears`** — never fold them into `pears`.
 3. **Never hand-edit `aliases.json`** — always go through the scripts (they
    validate, de-dupe, and keep it sorted, so a stray character can't break it).
 

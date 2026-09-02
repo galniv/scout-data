@@ -5,6 +5,17 @@
   "apricots": [
     "apricot"
   ],
+  "asian pears": [
+    "apple pear",
+    "apple pears",
+    "asian pear",
+    "asian pears",
+    "korean pear",
+    "korean pears",
+    "nashi",
+    "nashi pear",
+    "nashi pears"
+  ],
   "blackberries": [
     "blackberry"
   ],
@@ -66,8 +77,6 @@
     "yellow peaches"
   ],
   "pears": [
-    "asian pear",
-    "asian pears",
     "pear"
   ],
   "plums": [
