@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-02T07:12:00-04:00",
+  "generatedAt": "2026-09-03T07:15:00-04:00",
   "farms": [
     {
       "name": "Tougas Family Farm",
@@ -7,6 +7,14 @@
       "home": true,
       "driveMinutes": 35,
       "crops": [
+        {
+          "crop": "blackberries",
+          "status": "now picking"
+        },
+        {
+          "crop": "peaches",
+          "status": "now picking"
+        },
         {
           "crop": "nectarines",
           "status": "now picking"
@@ -18,6 +26,13 @@
       ]
     },
     {
+      "name": "Ward's Berry Farm",
+      "url": "https://www.wardsberryfarm.com/pick-your-own",
+      "home": true,
+      "driveMinutes": 20,
+      "crops": []
+    },
+    {
       "name": "Belkin Family Lookout Farm",
       "url": "https://www.lookoutfarm.com/pickyourown",
       "home": true,
@@ -25,7 +40,7 @@
       "crops": [
         {
           "crop": "nectarines",
-          "status": "now picking"
+          "status": "last call"
         },
         {
           "crop": "asian pears",
