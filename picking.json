@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T07:15:00-04:00",
+  "generatedAt": "2026-09-04T07:20:00-04:00",
   "farms": [
     {
       "name": "Tougas Family Farm",
@@ -39,27 +39,11 @@
       "driveMinutes": 12,
       "crops": [
         {
-          "crop": "nectarines",
-          "status": "last call"
-        },
-        {
           "crop": "asian pears",
           "status": "now picking"
         },
         {
           "crop": "apples",
-          "status": "now picking"
-        }
-      ]
-    },
-    {
-      "name": "Hanson's Farm",
-      "url": "https://www.hansonsfarmframingham.com/pick-your-own",
-      "home": false,
-      "driveMinutes": 18,
-      "crops": [
-        {
-          "crop": "blackberries",
           "status": "now picking"
         }
       ]
