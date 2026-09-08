@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-07T07:12:00-04:00",
+  "generatedAt": "2026-09-08T07:45:00-04:00",
   "farms": [
     {
       "name": "Tougas Family Farm",
@@ -40,6 +40,30 @@
         },
         {
           "crop": "apples",
+          "status": "now picking"
+        },
+        {
+          "crop": "nectarines",
+          "status": "ending soon"
+        }
+      ]
+    },
+    {
+      "name": "Shelburne Farm",
+      "url": "https://www.shelburnefarm.com/",
+      "home": false,
+      "driveMinutes": 28,
+      "crops": [
+        {
+          "crop": "apples",
+          "status": "now picking"
+        },
+        {
+          "crop": "peaches",
+          "status": "now picking"
+        },
+        {
+          "crop": "asian pears",
           "status": "now picking"
         }
       ]
