@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-12T07:08:00-04:00",
+  "generatedAt": "2026-09-13T07:10:00-04:00",
   "farms": [
     {
       "name": "Tougas Family Farm",
@@ -12,7 +12,7 @@
           "status": "now picking"
         },
         {
-          "crop": "blackberries",
+          "crop": "nectarines",
           "status": "now picking"
         }
       ]
@@ -52,7 +52,7 @@
         },
         {
           "crop": "peaches",
-          "status": "now picking"
+          "status": "excellent"
         },
         {
           "crop": "asian pears",
