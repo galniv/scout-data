@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T07:10:00-04:00",
+  "generatedAt": "2026-09-14T07:10:00-04:00",
   "farms": [
     {
       "name": "Tougas Family Farm",
@@ -9,10 +9,6 @@
       "crops": [
         {
           "crop": "apples",
-          "status": "now picking"
-        },
-        {
-          "crop": "nectarines",
           "status": "now picking"
         }
       ]
@@ -37,18 +33,22 @@
         {
           "crop": "apples",
           "status": "now picking"
+        },
+        {
+          "crop": "nectarines",
+          "status": "now picking (Tue-Thu)"
         }
       ]
     },
     {
       "name": "Shelburne Farm",
-      "url": "https://www.shelburnefarm.com/",
+      "url": "https://www.shelburnefarm.com/whats-picking-today-apples-peaches-asian-pears.html",
       "home": false,
       "driveMinutes": 28,
       "crops": [
         {
           "crop": "apples",
-          "status": "now picking"
+          "status": "excellent"
         },
         {
           "crop": "peaches",
