@@ -2,13 +2,13 @@
   "apples": {
     "2026": {
       "start": "2026-07-25",
-      "lastSeen": "2026-09-15"
+      "lastSeen": "2026-09-16"
     }
   },
   "asian pears": {
     "2026": {
       "start": "2026-08-22",
-      "lastSeen": "2026-09-15"
+      "lastSeen": "2026-09-16"
     }
   },
   "blackberries": {
@@ -56,7 +56,13 @@
   "peaches": {
     "2026": {
       "start": "2026-07-17",
-      "lastSeen": "2026-09-15"
+      "lastSeen": "2026-09-16"
+    }
+  },
+  "pumpkins": {
+    "2026": {
+      "start": "2026-09-16",
+      "lastSeen": "2026-09-16"
     }
   },
   "raspberries": {
