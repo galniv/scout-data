@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T07:30:00-04:00",
+  "generatedAt": "2026-09-22T07:08:40-04:00",
   "farms": [
     {
       "name": "Tougas Family Farm",
@@ -21,7 +21,7 @@
       "crops": [
         {
           "crop": "pears",
-          "status": "excellent"
+          "status": "good"
         }
       ]
     },
@@ -43,7 +43,7 @@
     },
     {
       "name": "Shelburne Farm",
-      "url": "https://www.shelburnefarm.com/",
+      "url": "https://www.shelburnefarm.com/whats-picking-today-apples-peaches-asian-pears.html",
       "home": false,
       "driveMinutes": 28,
       "crops": [
