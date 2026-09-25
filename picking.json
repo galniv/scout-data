@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T07:16:00-04:00",
+  "generatedAt": "2026-09-25T07:30:00-04:00",
   "farms": [
     {
       "name": "Tougas Family Farm",
@@ -61,6 +61,18 @@
         },
         {
           "crop": "pumpkins",
+          "status": "now picking"
+        }
+      ]
+    },
+    {
+      "name": "The Big Apple Farm",
+      "url": "https://thebigapple.farm/",
+      "home": false,
+      "driveMinutes": 22,
+      "crops": [
+        {
+          "crop": "apples",
           "status": "now picking"
         }
       ]
