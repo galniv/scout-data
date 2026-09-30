@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T07:16:50-04:00",
+  "generatedAt": "2026-09-30T07:16:00-04:00",
   "farms": [
     {
       "name": "Tougas Family Farm",
@@ -14,6 +14,18 @@
         {
           "crop": "pumpkins",
           "status": "now picking"
+        }
+      ]
+    },
+    {
+      "name": "Ward's Berry Farm",
+      "url": "https://www.wardsberryfarm.com/pick-your-own",
+      "home": true,
+      "driveMinutes": 20,
+      "crops": [
+        {
+          "crop": "pumpkins",
+          "status": "good"
         }
       ]
     },
@@ -49,6 +61,18 @@
         },
         {
           "crop": "pumpkins",
+          "status": "now picking"
+        }
+      ]
+    },
+    {
+      "name": "Tangerini's Farm",
+      "url": "https://www.tangerinisfarm.com/upick",
+      "home": false,
+      "driveMinutes": 20,
+      "crops": [
+        {
+          "crop": "apples",
           "status": "now picking"
         }
       ]
