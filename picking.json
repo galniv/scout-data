@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T07:16:00-04:00",
+  "generatedAt": "2026-10-01T07:05:00-04:00",
   "farms": [
     {
       "name": "Tougas Family Farm",
@@ -24,6 +24,10 @@
       "driveMinutes": 20,
       "crops": [
         {
+          "crop": "grapes",
+          "status": "good"
+        },
+        {
           "crop": "pumpkins",
           "status": "good"
         }
@@ -46,8 +50,20 @@
       ]
     },
     {
-      "name": "Shelburne Farm",
-      "url": "https://www.shelburnefarm.com/whats-picking-today-apples-peaches-asian-pears.html",
+      "name": "Tangerini's Farm",
+      "url": "https://www.tangerinisfarm.com/upick",
+      "home": false,
+      "driveMinutes": 20,
+      "crops": [
+        {
+          "crop": "apples",
+          "status": "now picking"
+        }
+      ]
+    },
+    {
+      "name": "Honey Pot Hill Orchards",
+      "url": "https://www.honeypothill.com/pyo",
       "home": false,
       "driveMinutes": 28,
       "crops": [
@@ -56,23 +72,7 @@
           "status": "now picking"
         },
         {
-          "crop": "asian pears",
-          "status": "now picking"
-        },
-        {
-          "crop": "pumpkins",
-          "status": "now picking"
-        }
-      ]
-    },
-    {
-      "name": "Tangerini's Farm",
-      "url": "https://www.tangerinisfarm.com/upick",
-      "home": false,
-      "driveMinutes": 20,
-      "crops": [
-        {
-          "crop": "apples",
+          "crop": "pears",
           "status": "now picking"
         }
       ]
