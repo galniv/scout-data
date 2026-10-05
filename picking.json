@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T07:05:00-04:00",
+  "generatedAt": "2026-10-05T07:05:00-04:00",
   "farms": [
     {
       "name": "Tougas Family Farm",
@@ -26,10 +26,6 @@
         {
           "crop": "grapes",
           "status": "good"
-        },
-        {
-          "crop": "pears",
-          "status": "fair"
         },
         {
           "crop": "pumpkins",
@@ -66,17 +62,17 @@
       ]
     },
     {
-      "name": "Honey Pot Hill Orchards",
-      "url": "https://www.honeypothill.com/pyo",
+      "name": "Shelburne Farm",
+      "url": "https://www.shelburnefarm.com/",
       "home": false,
-      "driveMinutes": 28,
+      "driveMinutes": 33,
       "crops": [
         {
           "crop": "apples",
           "status": "now picking"
         },
         {
-          "crop": "pears",
+          "crop": "pumpkins",
           "status": "now picking"
         }
       ]
