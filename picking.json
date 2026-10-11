@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T07:05:00-04:00",
+  "generatedAt": "2026-10-11T07:16:28-04:00",
   "farms": [
     {
       "name": "Tougas Family Farm",
@@ -18,12 +18,7 @@
       "url": "https://www.wardsberryfarm.com/pick-your-own",
       "home": true,
       "driveMinutes": 20,
-      "crops": [
-        {
-          "crop": "raspberries",
-          "status": "fair"
-        }
-      ]
+      "crops": []
     },
     {
       "name": "Belkin Family Lookout Farm",
@@ -32,18 +27,18 @@
       "driveMinutes": 15,
       "crops": [
         {
-          "crop": "apples",
+          "crop": "asian pears",
           "status": "now picking"
         },
         {
-          "crop": "asian pears",
+          "crop": "apples",
           "status": "now picking"
         }
       ]
     },
     {
       "name": "Carver Hill Orchard",
-      "url": "https://www.carverhillorchard.com/",
+      "url": "https://www.carverhillorchard.com/blog",
       "home": false,
       "driveMinutes": 30,
       "crops": [
