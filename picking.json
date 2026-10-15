@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T07:10:00-04:00",
+  "generatedAt": "2026-10-15T07:19:01-04:00",
   "farms": [
     {
       "name": "Tougas Family Farm",
@@ -9,10 +9,6 @@
       "crops": [
         {
           "crop": "apples",
-          "status": "now picking"
-        },
-        {
-          "crop": "pumpkins",
           "status": "now picking"
         }
       ]
@@ -24,8 +20,8 @@
       "driveMinutes": 20,
       "crops": [
         {
-          "crop": "pumpkins",
-          "status": "excellent"
+          "crop": "raspberries",
+          "status": "fair and limited"
         }
       ]
     },
@@ -33,27 +29,27 @@
       "name": "Belkin Family Lookout Farm",
       "url": "https://www.lookoutfarm.com/pickyourown",
       "home": true,
-      "driveMinutes": 15,
+      "driveMinutes": 10,
       "crops": [
         {
-          "crop": "asian pears",
+          "crop": "apples",
           "status": "now picking"
         },
         {
-          "crop": "apples",
+          "crop": "asian pears",
           "status": "now picking"
         }
       ]
     },
     {
-      "name": "Carver Hill Orchard",
-      "url": "https://www.carverhillorchard.com/blog",
+      "name": "Honey Pot Hill Orchards",
+      "url": "https://honeypothill.com/pyo",
       "home": false,
       "driveMinutes": 30,
       "crops": [
         {
           "crop": "apples",
-          "status": "winding down"
+          "status": "now picking"
         }
       ]
     }
