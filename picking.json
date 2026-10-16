@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T07:19:01-04:00",
+  "generatedAt": "2026-10-16T07:14:00-04:00",
   "farms": [
     {
       "name": "Tougas Family Farm",
@@ -18,12 +18,7 @@
       "url": "https://www.wardsberryfarm.com/pick-your-own",
       "home": true,
       "driveMinutes": 20,
-      "crops": [
-        {
-          "crop": "raspberries",
-          "status": "fair and limited"
-        }
-      ]
+      "crops": []
     },
     {
       "name": "Belkin Family Lookout Farm",
