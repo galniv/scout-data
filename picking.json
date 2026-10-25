@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T07:10:00-04:00",
+  "generatedAt": "2026-10-25T11:12:58-04:00",
   "farms": [
     {
       "name": "Tougas Family Farm",
@@ -25,7 +25,7 @@
       "crops": [
         {
           "crop": "pumpkins",
-          "status": "excellent"
+          "status": "now picking"
         }
       ]
     },
