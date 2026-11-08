@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T06:09:00-05:00",
+  "generatedAt": "2026-11-08T06:11:00-05:00",
   "farms": [
     {
       "name": "Tougas Family Farm",
@@ -22,7 +22,7 @@
     },
     {
       "name": "Belkin Family Lookout Farm",
-      "url": "https://www.lookoutfarm.com/pickyourown",
+      "url": "https://www.lookoutfarm.com/",
       "home": true,
       "driveMinutes": 10,
       "crops": [
