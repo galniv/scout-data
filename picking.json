@@ -1,29 +1,4 @@
 {
-  "generatedAt": "2026-11-15T06:10:00-05:00",
-  "farms": [
-    {
-      "name": "Tougas Family Farm",
-      "url": "https://www.tougasfamilyfarm.com/whats-picking",
-      "home": true,
-      "driveMinutes": 28,
-      "crops": [
-        {
-          "crop": "apples",
-          "status": "ending soon"
-        }
-      ]
-    },
-    {
-      "name": "Belkin Family Lookout Farm",
-      "url": "https://www.lookoutfarm.com/",
-      "home": true,
-      "driveMinutes": 15,
-      "crops": [
-        {
-          "crop": "apples",
-          "status": "ending soon"
-        }
-      ]
-    }
-  ]
+  "generatedAt": "2026-11-16T06:11:00-05:00",
+  "farms": []
 }
